@@ -1,5 +1,6 @@
 properties = [
     {
+        "id": 1,
         "address": "123 Example Street",
         "suburb": "Newtown",
         "price": 850000,
@@ -8,6 +9,7 @@ properties = [
         "land_size": 450
     },
     {
+        "id": 2,
         "address": "45 King Street",
         "suburb": "Glebe",
         "price": 920000,
@@ -16,6 +18,7 @@ properties = [
         "land_size": 500
     },
     {
+        "id": 3,
         "address": "8 Park Road",
         "suburb": "Newtown",
         "price": 760000,
@@ -24,6 +27,7 @@ properties = [
         "land_size": 300
     },
     {
+        "id": 4,
         "address": "18 Park Road",
         "suburb": "Newtown",
         "price": 1050000,
@@ -32,6 +36,7 @@ properties = [
         "land_size": 410
     },
     {
+        "id": 5,
         "address": "22 King Street",
         "suburb": "Surry Hills",
         "price": 980000,
@@ -40,6 +45,7 @@ properties = [
         "land_size": 420
     },
     {
+        "id": 6,
         "address": "999 Broken Street",
         "suburb": "Newtown",
         "price": -50000,
@@ -48,6 +54,7 @@ properties = [
         "land_size": 450
     },
     {
+        "id": 7,
         "address": "999 Broken Street",
         "suburb": "Newtown",
         "price": 50000,

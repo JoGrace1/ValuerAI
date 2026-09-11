@@ -1,4 +1,5 @@
 def validate_property(property):
+    print("Validating property:", property)
     if (
         property["price"] > 0
         and property["suburb"] is not None
