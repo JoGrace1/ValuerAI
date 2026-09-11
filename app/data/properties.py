@@ -30,16 +30,29 @@ properties = [
         "bedrooms": 3,
         "bathrooms": 2,
         "land_size": 410
+    },
+    {
+        "address": "22 King Street",
+        "suburb": "Surry Hills",
+        "price": 980000,
+        "bedrooms": 3,
+        "bathrooms": 2,
+        "land_size": 420
+    },
+    {
+        "address": "999 Broken Street",
+        "suburb": "Newtown",
+        "price": -50000,
+        "bedrooms": 3,
+        "bathrooms": 2,
+        "land_size": 450
+    },
+    {
+        "address": "999 Broken Street",
+        "suburb": "Newtown",
+        "price": 50000,
+        "bedrooms": 0,
+        "bathrooms": 2,
+        "land_size": 0
     }
 ]
-
-suburbs = ["Newtown", "Surry Hills", "Glebe", "Waterloo"]
-def filter_properties(properties, min_bedrooms, wanted_suburb, min_land_size):
-    filtered_properties = []
-    for property in properties:
-        if property["bedrooms"] >= min_bedrooms and property["suburb"] == wanted_suburb and property["land_size"] >= min_land_size:
-            filtered_properties.append(property)
-    return filtered_properties
-filtered_properties =filter_properties(properties, min_bedrooms=3, wanted_suburb="Newtown", min_land_size=400)
-print(filtered_properties)
-print(f"{properties[0]['address']} in {properties[0]['suburb']} costs {properties[0]['price']} AUD has {properties[0]['bedrooms']} bedrooms {properties[0]['bathrooms']} bathrooms and {properties[0]['land_size']} sqm of land.")

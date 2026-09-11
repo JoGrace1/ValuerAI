@@ -1,4 +1,3 @@
-suburbs = ["Newtown", "Surry Hills", "Glebe", "Waterloo"]
 def filter_properties(properties, min_bedrooms, wanted_suburb, min_land_size):
     filtered_properties = []
     for property in properties:
