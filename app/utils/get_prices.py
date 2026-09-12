@@ -1,4 +1,4 @@
-def get_prices(properties):
+def get_prices(properties: list[dict]) -> list[float]:
     price_list = []
     for property in properties:
         try:

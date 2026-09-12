@@ -35,4 +35,3 @@ print(filtered)
 print(valid_properties)
 
 print("error", error)
-print("error_json", error_json)
