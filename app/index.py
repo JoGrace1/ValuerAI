@@ -27,12 +27,12 @@ with open("app/data/properties.json", "r") as file:
     data = json.load(file)
     data2 = json.loads(json.dumps(data))
     #print("DATA loads ", data2)
-
-#error_json = json.dumps(error)
+with open("app/data/error.json", "w") as file:
+    json.dump(error, file, indent=4)
 print(len(valid_properties))
 print(len(filtered))
 print(filtered)
 print(valid_properties)
 
 print("error", error)
-#print("error_json", error_json)
+print("error_json", error_json)

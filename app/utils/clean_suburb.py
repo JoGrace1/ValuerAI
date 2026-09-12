@@ -3,7 +3,7 @@ def clean_suburb(property, error):
         suburb = property["suburb"]
         if suburb is None:
             error.append({
-                "property_id": {property["id"]},
+                "property_id": property["id"],
                 "error": "Suburb is None"
             })
             return None
@@ -13,14 +13,14 @@ def clean_suburb(property, error):
                 property["suburb"] = suburb
             except ValueError:
                 error.append({
-                    "property_id": {property["id"]},
+                    "property_id": property["id"],
                     "error": "Suburb is not a string"
                 })
                 return None
        
     except KeyError:
         error.append({
-            "property_id": {property["id"]},
+            "property_id": property["id"],
             "error": "Suburb key is missing"
         })
         property["suburb"] = ""

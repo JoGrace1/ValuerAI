@@ -1,0 +1,10 @@
+[
+    {
+        "property_id": 8,
+        "error": "Price key is missing"
+    },
+    {
+        "property_id": 9,
+        "error": "Price is None"
+    }
+]

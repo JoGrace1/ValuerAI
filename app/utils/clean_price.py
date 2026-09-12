@@ -1,11 +1,9 @@
 def clean_price(property, error):
     try:
         price = property["price"]
-        print(f"Property {property['id']} has a price of {price}.")
         if price is None:
-            print(f"Property {property['id']} does not have a price key.")
             error.append({
-                "property_id": {property["id"]},
+                "property_id": property["id"],
                 "error": "Price is None"
             })
             return None
@@ -16,13 +14,13 @@ def clean_price(property, error):
                 property["price"] = price
             except ValueError:
                 error.append({
-                    "property_id": {property["id"]},
+                    "property_id": property["id"],
                     "error": "Price is not a number"
                 })
                 return None
     except KeyError:
         error.append({
-            "property_id": {property["id"]},
+            "property_id": property["id"],
             "error": "Price key is missing"
         })
         return None
